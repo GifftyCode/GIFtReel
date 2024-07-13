@@ -1,3 +1,7 @@
 export const MovieList = () => {
-  return <main>MovieList</main>;
+  return (
+    <main>
+      <div className='text-9xl bg-green-200'>MovieList</div>
+    </main>
+  );
 };
