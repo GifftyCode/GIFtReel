@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# GIFtReel Movie Database
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GIFtReel is a React-based web application that utilizes the [The Movie Database (TMDb) API](https://www.themoviedb.org/documentation/api) to fetch and display movie information. It allows users to explore various movies, view details, and search for specific titles.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Movie Listing:** Fetches and displays movies based on categories such as now playing, popular, top-rated, and upcoming.
+- **Detailed Movie Information:** Provides comprehensive details about each movie, including title, overview, genres, ratings, runtime, budget, revenue, release date, and IMDB link.
+- **Search Functionality:** Enables users to search for movies by title.
+- **Responsive Design:** Ensures a seamless experience across devices.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```
+   git clone https://github.com/GifftyCode/GIFtReel.git
+   ```
+2. Navigate into the project directory:
+   ```
+   cd GIFtReel
+   ```
+3. Install dependencies using npm:
+   ```
+   npm install
+   ```
+4. Set up environment variables:
+   - Create a `.env` file in the root directory.
+   - Add your TMDb API key:
+     ```
+     REACT_APP_API_KEY=your_api_key_here
+     ```
+5. Start the development server:
+   ```
+   npm start
+   ```
+6. Open your browser and visit `http://localhost:3000` to view the application.
 
-### `npm test`
+## Components and Hooks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Components
 
-### `npm run build`
+- **Card:** Displays individual movie cards with title, poster, and overview.
+- **MovieDetail:** Shows detailed information about a specific movie.
+- **PageNotFound:** Custom 404 page for handling invalid routes.
+- **Search:** Component for searching movies based on user input.
+- **Header and Footer:** Navigation and footer components for consistent layout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Custom Hooks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **useFetch:** Custom hook for fetching data from the TMDb API based on provided endpoint and query term.
+- **useTitle:** Hook to dynamically set the document title based on the current page or movie title.
+- **ScrollToTop:** Scrolls the window to the top when navigating between pages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- Navigate through different sections using the navigation links (Home, Popular, Top Rated, Upcoming).
+- Click on a movie card to view detailed information about the movie.
+- Use the search bar to find movies by title.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React:** Front-end library for building user interfaces.
+- **React Router:** Declarative routing for React applications.
+- **CSS (Tailwind CSS):** Utility-first CSS framework for styling components.
+- **API Integration:** Fetching data from The Movie Database (TMDb) API.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Contributions are welcome! Feel free to fork the repository and submit pull requests to suggest improvements or add new features.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
