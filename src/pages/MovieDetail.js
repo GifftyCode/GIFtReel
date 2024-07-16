@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Backup from '../assets/images/backup.webp';
+import { useTitle } from '../components/hooks/useTitle';
 
 export const MovieDetail = () => {
   const params = useParams();
   const [movie, setMovie] = useState({});
+
   const image = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
     : Backup;
+
+  useTitle(movie.title);
 
   useEffect(() => {
     async function fetchMovie() {
