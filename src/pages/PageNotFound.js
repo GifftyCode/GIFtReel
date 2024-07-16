@@ -10,7 +10,7 @@ export const PageNotFound = () => {
           <p className='text-7xl text-gray-700 font-bold my-10 dark:text-white'>
             404, Oops!
           </p>
-          <div className='max-w-sm'>
+          <div className='max-w-lg'>
             <img className='rounded' src={errorPage} alt='404 page not found' />
           </div>
         </div>
