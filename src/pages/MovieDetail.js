@@ -23,7 +23,7 @@ export const MovieDetail = () => {
       console.log(result);
     }
     fetchMovie();
-  }, []);
+  }, [params.id]);
 
   return (
     <main>

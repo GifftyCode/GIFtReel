@@ -35,7 +35,7 @@ export const Header = () => {
   return (
     <header>
       <nav className='bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900'>
-        <div className='container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+        <div className=' max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <Link to='/' className='flex items-center rtl:space-x-reverse'>
             <img src={Logo} className='h-8' alt='GiftReel Logo' />
             <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
